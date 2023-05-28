@@ -9,25 +9,16 @@ import org.springframework.web.bind.annotation.*;
 import lifelong.service.CourseService;
 
 @Controller
-//@RequestMapping("/course")
+@RequestMapping("/course")
 public class CourseController {
-    private String title = "หลักสูตร";
+    private String title = "หลักสูตร123456789";
 
-    @RequestMapping("/")public String showHome() {return "home";}
-
-//    @Autowired
-//    private CourseService courseService;
-//
-//    @GetMapping("/list")
-//    public String listCourse(Model model) {
-//        model.addAttribute("title", "รายการ" + title);
-//        model.addAttribute("courses", courseService.getCourse());
-//        return "courses/list";
-//    }
-//
-//    @InitBinder
-//    public void initBinder(WebDataBinder dataBinder) {
-//        StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
-//        dataBinder.registerCustomEditor(String.class, stringTrimmerEditor);
-//    }
+        @Autowired
+        private CourseService courseService;
+        @GetMapping("/list")
+        public String listCourse(Model model) {
+            model.addAttribute("title", "รายการ" + title);
+            model.addAttribute("courses", courseService.getCourses());
+            return "course/list";
+        }
 }

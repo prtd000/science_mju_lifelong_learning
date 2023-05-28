@@ -63,4 +63,123 @@ public class Course {
             inverseJoinColumns = { @JoinColumn(name = "lec_username",nullable = false) })
     private Set<Lecturer> lecturers;
 
+    public String getCourse_id() {
+        return course_id;
+    }
+
+    public void setCourse_id(String course_id) {
+        this.course_id = course_id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getCertificateName() {
+        return certificateName;
+    }
+
+    public void setCertificateName(String certificateName) {
+        this.certificateName = certificateName;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
+
+    public String getPrinciple() {
+        return principle;
+    }
+
+    public void setPrinciple(String principle) {
+        this.principle = principle;
+    }
+
+    public String getObject() {
+        return object;
+    }
+
+    public void setObject(String object) {
+        this.object = object;
+    }
+
+    public int getTotalHours() {
+        return totalHours;
+    }
+
+    public void setTotalHours(int totalHours) {
+        this.totalHours = totalHours;
+    }
+
+    public String getTargetOccupation() {
+        return targetOccupation;
+    }
+
+    public void setTargetOccupation(String targetOccupation) {
+        this.targetOccupation = targetOccupation;
+    }
+
+    public double getFee() {
+        return fee;
+    }
+
+    public void setFee(double fee) {
+        this.fee = fee;
+    }
+
+    public String getFile() {
+        return file;
+    }
+
+    public void setFile(String file) {
+        this.file = file;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getLinkMooc() {
+        return linkMooc;
+    }
+
+    public void setLinkMooc(String linkMooc) {
+        this.linkMooc = linkMooc;
+    }
+
+    public Set<RequestOpenCourse> getRqOpenCourse() {
+        return rqOpenCourse;
+    }
+
+    public void setRqOpenCourse(Set<RequestOpenCourse> rqOpenCourse) {
+        this.rqOpenCourse = rqOpenCourse;
+    }
+
+    public Set<Activity> getActivities() {
+        return activities;
+    }
+
+    public void setActivities(Set<Activity> activities) {
+        this.activities = activities;
+    }
+
+    public Set<Lecturer> getLecturers() {
+        return lecturers;
+    }
+
+    public void setLecturers(Set<Lecturer> lecturers) {
+        this.lecturers = lecturers;
+    }
 }
