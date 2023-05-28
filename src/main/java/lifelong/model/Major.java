@@ -1,7 +1,4 @@
-package model;
-
-import com.sun.istack.NotNull;
-import com.sun.istack.Nullable;
+package lifelong.model;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -19,10 +16,10 @@ public class Major {
     private String name;
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "major_id")
+    @JoinColumn(name = "major_id",nullable = false)
     private Set<Course> courses = new HashSet<>();
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "major_id")
+    @JoinColumn(name = "major_id",nullable = false)
     private Set<Lecturer> lecturers = new HashSet<>();
 }

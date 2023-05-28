@@ -1,6 +1,4 @@
-package model;
-
-import com.sun.istack.NotNull;
+package lifelong.model;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -43,7 +41,7 @@ public class Member {
     private String education;
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "mem_username")
+    @JoinColumn(name = "mem_username",nullable = false)
     private Set<Register> register = new HashSet<>();
 
     public Member() {

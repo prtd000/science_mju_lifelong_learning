@@ -1,4 +1,4 @@
-package model;
+package lifelong.model;
 
 import org.hibernate.annotations.GenericGenerator;
 

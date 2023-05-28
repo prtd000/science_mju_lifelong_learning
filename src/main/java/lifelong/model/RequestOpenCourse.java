@@ -1,4 +1,4 @@
-package model;
+package lifelong.model;
 
 import org.hibernate.annotations.GenericGenerator;
 
@@ -56,7 +56,7 @@ public class RequestOpenCourse {
     private String signature;
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "request_id")
+    @JoinColumn(name = "request_id",nullable = false)
     private Set<Register> register = new HashSet<>();
 }
 

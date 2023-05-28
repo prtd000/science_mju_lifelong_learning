@@ -1,4 +1,4 @@
-package model;
+package lifelong.model;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -34,11 +34,11 @@ public class Lecturer {
     private String email;
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "lec_username")
+    @JoinColumn(name = "lec_username",nullable = false)
     private Set<RequestOpenCourse> rqOpenCourse = new HashSet<>();
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "lec_username")
+    @JoinColumn(name = "lec_username",nullable = false)
     private Set<Activity> activities = new HashSet<>();
 
 }

@@ -1,4 +1,4 @@
-package model;
+package lifelong.model;
 
 import org.hibernate.annotations.GenericGenerator;
 
@@ -23,4 +23,12 @@ public class Invoice {
 
     @Column(nullable = false,length = 100)
     private String pay_status;
+
+    @OneToOne
+    @JoinColumn(name="register_id",nullable = false)
+    private Register register;
+
+//    @OneToOne
+//    @JoinColumn(name="request_id",nullable = false)
+//    private RequestOpenCourse requestOpenCourse;
 }

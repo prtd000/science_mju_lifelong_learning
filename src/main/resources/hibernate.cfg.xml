@@ -6,7 +6,7 @@
     <session-factory>
         <!-- Database connection settings -->
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/project_final</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sci_mju_lifelong</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">1234</property>
 
@@ -22,16 +22,16 @@
         <!-- Drop and re-create the database schema on startup -->
         <property name="hibernate.hbm2ddl.auto">create-drop</property>
 
-        <mapping class="model.Admin"/>
-        <mapping class="model.Member"/>
-        <mapping class="model.Register"/>
-        <mapping class="model.Lecturer"/>
-        <mapping class="model.RequestOpenCourse"/>
-        <mapping class="model.Course"/>
-        <mapping class="model.Major"/>
-        <mapping class="model.Activity" />
-        <mapping class="model.Receipt" />
-        <mapping class="model.Invoice" />
+        <mapping class="lifelong.model.Admin"/>
+        <mapping class="lifelong.model.Member"/>
+        <mapping class="lifelong.model.Register"/>
+        <mapping class="lifelong.model.Lecturer"/>
+        <mapping class="lifelong.model.RequestOpenCourse"/>
+        <mapping class="lifelong.model.Course"/>
+        <mapping class="lifelong.model.Major"/>
+        <mapping class="lifelong.model.Activity" />
+        <mapping class="lifelong.model.Receipt" />
+        <mapping class="lifelong.model.Invoice" />
 
     </session-factory>
 </hibernate-configuration>

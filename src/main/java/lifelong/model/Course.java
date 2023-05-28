@@ -1,4 +1,4 @@
-package model;
+package lifelong.model;
 
 import org.hibernate.annotations.GenericGenerator;
 
@@ -50,17 +50,17 @@ public class Course {
     private String linkMooc;
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "course_id")
+    @JoinColumn(name = "course_id",nullable = false)
     private Set<RequestOpenCourse> rqOpenCourse = new HashSet<>();
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "course_id")
+    @JoinColumn(name = "course_id",nullable = false)
     private Set<Activity> activities = new HashSet<>();
 
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "teaching_schedule",
             joinColumns = { @JoinColumn(name = "course_id") },
-            inverseJoinColumns = { @JoinColumn(name = "lec_username") })
+            inverseJoinColumns = { @JoinColumn(name = "lec_username",nullable = false) })
     private Set<Lecturer> lecturers;
 
 }

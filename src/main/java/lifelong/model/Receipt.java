@@ -1,4 +1,4 @@
-package model;
+package lifelong.model;
 
 import org.hibernate.annotations.GenericGenerator;
 
@@ -27,6 +27,9 @@ public class Receipt {
     @Column(name = "receipt_total",nullable = false,length = 10)
     private double total;
 
+    @OneToOne
+    @JoinColumn(name="invoice_id",nullable = false)
+    private Invoice invoice;
 
 //    @OneToOne(mappedBy = "receipt", cascade = CascadeType.ALL)
 //    private Register register;
