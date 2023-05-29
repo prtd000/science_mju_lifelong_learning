@@ -1,11 +1,6 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: DELL
-  Date: 5/28/2023
-  Time: 9:24 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <html lang="en">
 
 <head>
@@ -89,7 +84,7 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img class="w-100" src="${pageContext.request.contextPath}/assets/img/banner3.png" alt="Image">
-        <img src="<c:url value='assets/img/banner3.png' />" alt="Image" />
+        <img src="<c:url value='/assets/img/banner3.png' />" alt="Image" />
 
         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
           <div class="p-3" style="max-width: 900px;">
@@ -160,95 +155,18 @@
     </div>
     <div class="row g-5">
       <!----------Course 1------------>
+<c:forEach var="course" items="${courses}">
       <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
         <div class="service-item bg-light border-bottom border-5 border-primary rounded">
           <div class="position-relative p-5">
-            <h5 class="text-primary mb-0">MJUMOOC_0001</h5>
-            <h3 class="mb-3">นวัตกรรมผลิตภัณฑ์ทางการเกษตรสำหรับผู้ประกอบการ(นวัตกรรมขายได้)</h3>
-            <p style="font-weight: bold;">
-              เริ่มเรียนได้: 1/1/2022 12:00:00 AM <br>
-              สิ้นสุดการเรียน: 12/31/2023 12:00:00 AM
-            </p>
-            <p style="font-weight: bold;">ไม่มีค่าใช้จ่าย</p>
+            <h5 class="text-primary mb-0">${course.course_id}</h5>
+            <h3 class="mb-3">${course.name}</h3>
+            <p style="font-weight: bold;">${course.fee}</p>
             <a href="">อ่านเพิ่มเติม<i class="bi bi-arrow-right ms-2"></i></a>
           </div>
         </div>
       </div>
-      <!----------Course 2------------>
-      <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-        <div class="service-item bg-light border-bottom border-5 border-primary rounded">
-          <div class="position-relative p-5">
-            <h5 class="text-primary mb-0">MJUMOOC_0001</h5>
-            <h3 class="mb-3">นวัตกรรมผลิตภัณฑ์ทางการเกษตรสำหรับผู้ประกอบการ(นวัตกรรมขายได้)</h3>
-            <p style="font-weight: bold;">
-              เริ่มเรียนได้: 1/1/2022 12:00:00 AM <br>
-              สิ้นสุดการเรียน: 12/31/2023 12:00:00 AM
-            </p>
-            <p style="font-weight: bold;">ไม่มีค่าใช้จ่าย</p>
-            <a href="">อ่านเพิ่มเติม<i class="bi bi-arrow-right ms-2"></i></a>
-          </div>
-        </div>
-      </div>
-      <!----------Course 3------------>
-      <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
-        <div class="service-item bg-light border-bottom border-5 border-primary rounded">
-          <div class="position-relative p-5">
-            <h5 class="text-primary mb-0">MJUMOOC_0001</h5>
-            <h3 class="mb-3">นวัตกรรมผลิตภัณฑ์ทางการเกษตรสำหรับผู้ประกอบการ(นวัตกรรมขายได้)</h3>
-            <p style="font-weight: bold;">
-              เริ่มเรียนได้: 1/1/2022 12:00:00 AM <br>
-              สิ้นสุดการเรียน: 12/31/2023 12:00:00 AM
-            </p>
-            <p style="font-weight: bold;">ไม่มีค่าใช้จ่าย</p>
-            <a href="">อ่านเพิ่มเติม<i class="bi bi-arrow-right ms-2"></i></a>
-          </div>
-        </div>
-      </div>
-      <!----------Course 4------------>
-      <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-        <div class="service-item bg-light border-bottom border-5 border-primary rounded">
-          <div class="position-relative p-5">
-            <h5 class="text-primary mb-0">MJUMOOC_0001</h5>
-            <h3 class="mb-3">นวัตกรรมผลิตภัณฑ์ทางการเกษตรสำหรับผู้ประกอบการ(นวัตกรรมขายได้)</h3>
-            <p style="font-weight: bold;">
-              เริ่มเรียนได้: 1/1/2022 12:00:00 AM <br>
-              สิ้นสุดการเรียน: 12/31/2023 12:00:00 AM
-            </p>
-            <p style="font-weight: bold;">ไม่มีค่าใช้จ่าย</p>
-            <a href="">อ่านเพิ่มเติม<i class="bi bi-arrow-right ms-2"></i></a>
-          </div>
-        </div>
-      </div>
-      <!----------Course 5------------>
-      <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-        <div class="service-item bg-light border-bottom border-5 border-primary rounded">
-          <div class="position-relative p-5">
-            <h5 class="text-primary mb-0">MJUMOOC_0001</h5>
-            <h3 class="mb-3">นวัตกรรมผลิตภัณฑ์ทางการเกษตรสำหรับผู้ประกอบการ(นวัตกรรมขายได้)</h3>
-            <p style="font-weight: bold;">
-              เริ่มเรียนได้: 1/1/2022 12:00:00 AM <br>
-              สิ้นสุดการเรียน: 12/31/2023 12:00:00 AM
-            </p>
-            <p style="font-weight: bold;">ไม่มีค่าใช้จ่าย</p>
-            <a href="">อ่านเพิ่มเติม<i class="bi bi-arrow-right ms-2"></i></a>
-          </div>
-        </div>
-      </div>
-      <!----------Course 6------------>
-      <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
-        <div class="service-item bg-light border-bottom border-5 border-primary rounded">
-          <div class="position-relative p-5">
-            <h5 class="text-primary mb-0">MJUMOOC_0001</h5>
-            <h3 class="mb-3">นวัตกรรมผลิตภัณฑ์ทางการเกษตรสำหรับผู้ประกอบการ(นวัตกรรมขายได้)</h3>
-            <p style="font-weight: bold;">
-              เริ่มเรียนได้: 1/1/2022 12:00:00 AM <br>
-              สิ้นสุดการเรียน: 12/31/2023 12:00:00 AM
-            </p>
-            <p style="font-weight: bold;">ไม่มีค่าใช้จ่าย</p>
-            <a href="">อ่านเพิ่มเติม<i class="bi bi-arrow-right ms-2"></i></a>
-          </div>
-        </div>
-      </div>
+</c:forEach>
     </div>
   </div>
 </div>

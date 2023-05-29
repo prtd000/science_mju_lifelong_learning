@@ -15,10 +15,10 @@ public class CourseController {
 
         @Autowired
         private CourseService courseService;
-        @GetMapping("/list")
+        @GetMapping("/")
         public String listCourse(Model model) {
             model.addAttribute("title", "รายการ" + title);
             model.addAttribute("courses", courseService.getCourses());
-            return "course/list";
+            return "home";
         }
 }
