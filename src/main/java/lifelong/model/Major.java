@@ -17,9 +17,29 @@ public class Major {
 
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "major_id",nullable = false)
-    private Set<Course> courses = new HashSet<>();
-
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "major_id",nullable = false)
     private Set<Lecturer> lecturers = new HashSet<>();
+
+    public String getMajor_id() {
+        return major_id;
+    }
+
+    public void setMajor_id(String major_id) {
+        this.major_id = major_id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Set<Lecturer> getLecturers() {
+        return lecturers;
+    }
+
+    public void setLecturers(Set<Lecturer> lecturers) {
+        this.lecturers = lecturers;
+    }
 }

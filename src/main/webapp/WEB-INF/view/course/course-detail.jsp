@@ -14,6 +14,7 @@
 <body>
 <jsp:include page="/WEB-INF/view/layouts/nav.jsp"/>
 ${course_detail.name}
+${course_detail.major.name}
 ${course_detail.course_id}
 ${course_detail.totalHours}
 <jsp:include page="/WEB-INF/view/layouts/footer.jsp"/>

@@ -104,6 +104,7 @@
           <div class="position-relative p-5">
             <h5 class="text-primary mb-0">${course.course_id}</h5>
             <h3 class="mb-3">${course.name}</h3>
+            <h5 class="mb-3">${course.major.name}</h5>
             <p style="font-weight: bold;">${course.fee}</p>
             <a href="${pageContext.request.contextPath}/course/${course.course_id}">อ่านเพิ่มเติม<i class="bi bi-arrow-right ms-2"></i></a></td>
           </div>
@@ -379,7 +380,7 @@
 
 
 <!-- Blog End -->
-
+<jsp:include page="/WEB-INF/view/layouts/footer.jsp"/>
 </body>
 
 </html>

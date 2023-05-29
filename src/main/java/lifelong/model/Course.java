@@ -49,6 +49,10 @@ public class Course {
     @Column(name = "course_linkMooc",nullable = false)
     private String linkMooc;
 
+
+    @ManyToOne
+    @JoinColumn(name = "major_id")
+    private Major major;
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "course_id",nullable = false)
     private Set<RequestOpenCourse> rqOpenCourse = new HashSet<>();
@@ -62,6 +66,14 @@ public class Course {
             joinColumns = { @JoinColumn(name = "course_id") },
             inverseJoinColumns = { @JoinColumn(name = "lec_username",nullable = false) })
     private Set<Lecturer> lecturers;
+
+    public Major getMajor() {
+        return major;
+    }
+
+    public void setMajor(Major major) {
+        this.major = major;
+    }
 
     public String getCourse_id() {
         return course_id;
