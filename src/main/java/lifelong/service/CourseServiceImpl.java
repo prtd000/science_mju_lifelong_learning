@@ -18,4 +18,10 @@ public class CourseServiceImpl implements CourseService{
     public List<Course> getCourses() {
         return couresDao.getCourses();
     }
+
+    @Override
+    @Transactional
+    public Course getCourseDetail(String courseId) {
+        return couresDao.getCourseDetail(courseId);
+    }
 }

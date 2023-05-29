@@ -20,4 +20,17 @@ public class CourseDaoImpl implements CouresDao{
         List<Course> courses = query.getResultList();
         return courses;
     }
+
+    @Override
+    public Course getCourseDetail(String id) {
+        Session session = sessionFactory.getCurrentSession();
+        Course course = session.get(Course.class, id);
+        return course;
+    }
+//    @Override
+//    public Course getCourse(String courseId) {
+//        Session session = sessionFactory.getCurrentSession();
+//        Course course = session.get(Course.class, courseId);
+//        return course;
+//    }
 }
