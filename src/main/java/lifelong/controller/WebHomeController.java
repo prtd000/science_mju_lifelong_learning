@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class WebHomeController {
     @RequestMapping("/")
     public String showHome() {
-        return "course/list";
+        return "home";
     }
 }
