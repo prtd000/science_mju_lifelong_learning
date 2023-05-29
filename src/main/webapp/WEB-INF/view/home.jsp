@@ -84,7 +84,6 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img class="w-100" src="${pageContext.request.contextPath}/assets/img/banner3.png" alt="Image">
-        <img src="<c:url value='/assets/img/banner3.png' />" alt="Image" />
 
         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
           <div class="p-3" style="max-width: 900px;">
@@ -261,7 +260,6 @@
         </div>
         <p class="text-white mb-4">Eirmod sed tempor lorem ut dolores sit kasd ipsum. Dolor ea et dolore et at sea ea at dolor justo ipsum duo rebum sea. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo lorem. Elitr ut dolores magna sit. Sea dolore sed et.</p>
         <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">Order Now</a>
-        <a href="" class="btn btn-secondary py-md-3 px-md-5">Read More</a>
       </div>
     </div>
   </div>
