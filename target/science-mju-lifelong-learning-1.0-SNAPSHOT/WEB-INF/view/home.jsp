@@ -305,7 +305,7 @@
 <!-- Team End -->
 
 
-<!-- Testimonial Start -->
+<!-- Testimonial Start --->
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
   <div class="container">
     <div class="text-center mx-auto mb-5" style="max-width: 600px;">
