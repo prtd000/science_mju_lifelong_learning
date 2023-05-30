@@ -14,22 +14,23 @@ import lifelong.service.CourseService;
 public class CourseController {
     private String title = "หลักสูตร123456789";
 
-        @Autowired
-        private CourseService courseService;
-        @GetMapping("/")
-        public String listCourse(Model model) {
-            model.addAttribute("title", "รายการ" + title);
-            model.addAttribute("courses", courseService.getCourses());
-            return "home";
-        }
+    @Autowired
+    private CourseService courseService;
+
+    @GetMapping("/")
+    public String listCourse(Model model) {
+        model.addAttribute("title", "รายการ" + title);
+        model.addAttribute("courses", courseService.getCourses());
+        return "home";
+    }
 
     @GetMapping("/{id}")
     public String showCourseDetail(@PathVariable("id") String id, Model model) {
-            Course course = courseService.getCourseDetail(id);
-            model.addAttribute("title", "แก้ไข" + title);
-            model.addAttribute("course_detail", course);
-            return "course/course-detail";
-        }
+        Course course = courseService.getCourseDetail(id);
+        model.addAttribute("title", "แก้ไข" + title);
+        model.addAttribute("course_detail", course);
+        return "course/course-detail";
+    }
 
 //    @GetMapping("/{id}")
 //    public String showCourseDetail(@PathVariable("id") String id, Model model) {
