@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
-    <a href="index.html" class="navbar-brand ms-lg-5">
+    <a href="${pageContext.request.contextPath}/" class="navbar-brand ms-lg-5">
         <h1 class="display-5 m-0 text-primary">LIFELONG<span class="text-secondary">LEARNING</span></h1>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -9,19 +9,19 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse" style="margin-right: 43px;">
         <div class="navbar-nav ms-auto py-0">
-            <a href="index.html" class="nav-item nav-link active ">หน้าหลัก</a>
-            <a href="about.html" class="nav-item nav-link">เกี่ยวกับคณะ</a>
+            <a href="${pageContext.request.contextPath}/" class="nav-item nav-link active ">หน้าหลัก</a>
+            <a href="#" class="nav-item nav-link">เกี่ยวกับคณะ</a>
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">หลักสูตรการอบรม</a>
                 <div class="dropdown-menu m-0">
-                    <a href="price.html" class="dropdown-item">Reskill/Upskill</a>
-                    <a href="blog.html" class="dropdown-item">อบรมระยะสั้น</a>
+                    <a href="#" class="dropdown-item">Reskill/Upskill</a>
+                    <a href="#" class="dropdown-item">อบรมระยะสั้น</a>
 
                 </div>
             </div>
-            <a href="contact.html" class="nav-item nav-link">ข่าวสารและกิจกรรม</a>
-            <a href="contact.html" class="nav-item nav-link">เกี่ยวกับเรา</a>
-            <a href="contact.html" class="nav-item nav-link">เข้าสู่ระบบ</a>
+            <a href="#" class="nav-item nav-link">ข่าวสารและกิจกรรม</a>
+            <a href="#" class="nav-item nav-link">เกี่ยวกับเรา</a>
+            <a href="#" class="nav-item nav-link">เข้าสู่ระบบ</a>
         </div>
     </div>
 </nav>

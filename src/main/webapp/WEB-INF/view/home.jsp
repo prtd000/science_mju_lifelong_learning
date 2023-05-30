@@ -102,10 +102,18 @@
       <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
         <div class="service-item bg-light border-bottom border-5 border-primary rounded">
           <div class="position-relative p-5">
+            <img src="${pageContext.request.contextPath}/assets/img/${course.img}" style="width: 300px; height: 300px">
             <h5 class="text-primary mb-0">${course.course_id}</h5>
-            <h3 class="mb-3">${course.name}</h3>
-            <h5 class="mb-3">${course.major.name}</h5>
-            <p style="font-weight: bold;">${course.fee}</p>
+            <div style="overflow: hidden;text-overflow: ellipsis; /* แสดงเครื่องหมาย ... ตัดข้อความที่เกิน */white-space: nowrap;">
+              <%
+                String message = "เทคโนโลยีสารสนเทศและชีวิตใหม่(Information Technology and Modern Life)";
+              %>
+              <h3 style="overflow: hidden;display: inline-block;max-width: 100%;text-overflow: ellipsis; /* แสดงเครื่องหมาย ... ตัดข้อความที่เกิน */">${course.name}</h3>
+<%--              <h3 style="text-overflow: ellipsis;">${course.name}</h3>--%>
+            </div>
+            <p>${course.major.name}</p>
+            <h5>ระยะเวลา ${course.totalHours} ชั่วโมง</h5>
+            <h3 style="font-weight: bold;">ราคา ${course.fee} บาท</h3>
             <a href="${pageContext.request.contextPath}/course/${course.course_id}">อ่านเพิ่มเติม<i class="bi bi-arrow-right ms-2"></i></a></td>
           </div>
         </div>
