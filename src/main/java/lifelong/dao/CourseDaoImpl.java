@@ -30,6 +30,15 @@ public class CourseDaoImpl implements CouresDao{
     }
 
     @Override
+    public String[] getCourseDetailOpject(String id) {
+        Session session = sessionFactory.getCurrentSession();
+        Course course = session.get(Course.class, id);
+        String object = course.getObject();
+        String[] parts = object.split("2");
+        return parts;
+    }
+
+    @Override
     public void doAddCourse(Course course) {
         Session session = sessionFactory.getCurrentSession();
         session.saveOrUpdate(course);

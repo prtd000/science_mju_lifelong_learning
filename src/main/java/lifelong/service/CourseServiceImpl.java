@@ -28,6 +28,12 @@ public class CourseServiceImpl implements CourseService{
 
     @Override
     @Transactional
+    public String[] getCourseDetailOpject(String courseId) {
+        return couresDao.getCourseDetailOpject(courseId);
+    }
+
+    @Override
+    @Transactional
     public void doAddCourse(Course course) {
         couresDao.doAddCourse(course);
     }

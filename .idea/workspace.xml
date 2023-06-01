@@ -9,42 +9,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2943a7d7-a4c9-4db6-bcf7-90bab8360c5c" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/layouts/searchbar.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/209baec3-15c9-44c8-bc12-d3bfaef22008.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6629700a-c808-40c2-b058-acb6e2d418d7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/901953de-686f-4bff-a1aa-9795b975097c.xml" beforeDir="false" />
+    <list default="true" id="2943a7d7-a4c9-4db6-bcf7-90bab8360c5c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lifelong/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lifelong/controller/CourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lifelong/dao/CouresDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lifelong/dao/CouresDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lifelong/dao/CourseDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lifelong/dao/CourseDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lifelong/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lifelong/service/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lifelong/service/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lifelong/service/CourseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/course/course-detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/course/course-detail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/layouts/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/layouts/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/layouts/nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/layouts/nav.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/lifelong/controller/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lifelong/controller/CourseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lifelong/dao/CouresDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lifelong/dao/CouresDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lifelong/dao/CourseDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lifelong/dao/CourseDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lifelong/service/CourseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lifelong/service/CourseService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lifelong/service/CourseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lifelong/service/CourseServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/classes/lifelong/controller/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/classes/lifelong/controller/CourseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/classes/lifelong/dao/CouresDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/classes/lifelong/dao/CouresDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/classes/lifelong/dao/CourseDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/classes/lifelong/dao/CourseDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/classes/lifelong/service/CourseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/classes/lifelong/service/CourseService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/classes/lifelong/service/CourseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/classes/lifelong/service/CourseServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/view/course/course-detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/view/course/course-detail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/view/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/view/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/view/layouts/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/view/layouts/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/view/layouts/nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/view/layouts/nav.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/assets/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/assets/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/assets/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Jsp File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -55,6 +60,11 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2QaYBVJN7wjLTfwmXC2uyWQvB4S" />
   <component name="ProjectViewState">
@@ -64,26 +74,22 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/asus/Desktop/science-mju-lifelong-learning/src/main/webapp/assets/css",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "spring.configuration.checksum": "ec6bc363adb7e417e1ee96a295f27407",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Project-Final-2023/Final/src/main/webapp/assets/img/course_img&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\asus\Desktop\science-mju-lifelong-learning\src\main\webapp\assets\css" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\asus\Desktop\science-mju-lifelong-learning\src\main\webapp\assets\img" />
+      <recent name="D:\Project-Final-2023\Final\src\main\webapp\assets\img\course_img" />
     </key>
   </component>
   <component name="RunManager">
@@ -98,7 +104,6 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="0104b15b-c81e-4493-9fbb-3151e2bb59db" />
-        <option name="HTTP_PORT" value="8081" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -184,10 +189,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685593023891</updated>
-      <workItem from="1685593025190" duration="265000" />
-      <workItem from="1685593538588" duration="101000" />
-      <workItem from="1685615530451" duration="1360000" />
-      <workItem from="1685620414830" duration="9991000" />
+      <workItem from="1685593025190" duration="8289000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1685593109693</created>
@@ -210,22 +212,18 @@
       <option name="project" value="LOCAL" />
       <updated>1685593204093</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit">
+      <created>1685593385537</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685593385537</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />

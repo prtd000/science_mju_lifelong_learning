@@ -28,7 +28,29 @@
     .btn_contactus:hover{
       color: white;
     }
+     .block {
+       display: none;
+     }
   </style>
+
+  <script>
+    function search() {
+      var input = document.getElementById("searchInput").value.toLowerCase();
+      var blocks = document.getElementsByClassName("block");
+
+      for (var i = 0; i < blocks.length; i++) {
+        var block = blocks[i];
+        var text = block.getAttribute("data-name").toLowerCase();
+
+        if (text.includes(input)) {
+          block.style.display = "block";
+        } else {
+          block.style.display = "none";
+        }
+      }
+    }
+  </script>
+
 </head>
 
 <body>
@@ -36,6 +58,7 @@
 <jsp:include page="/WEB-INF/view/layouts/nav.jsp"/>
 <%--<input type="button" value="เพิ่มสาขา"onclick="window.location.href='${pageContext.request.contextPath}/course/add_major'; return false;"class="add-button"/>--%>
 <!-- Carousel Start -->
+
 <div class="container-fluid p-0 mb-5">
   <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -133,35 +156,38 @@
 
 
     <!-------Search-------->
-    <form action="search.jsp" method="get">
-      <input type="text" name="keyword" placeholder="Enter keyword">
-      <button type="submit">Search</button>
-    </form>
+<%--    <form action="search.jsp" method="get">--%>
+<%--      <input type="text" name="keyword" placeholder="Enter keyword">--%>
+<%--      <button type="submit">Search</button>--%>
+<%--    </form>--%>
 
 
 
     <div class="row g-5">
+      <input type="text" id="searchInput" onkeyup="search()" placeholder="Search...">
       <!----------Course 1------------>
 <c:forEach var="course" items="${courses}">
-      <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-        <div class="service-item bg-light border-bottom border-5 border-primary rounded" style="box-shadow: 2px -2px 6px 1px #9c9c9c;">
-          <div class="position-relative p-5">
-            <img src="${pageContext.request.contextPath}/assets/img/${course.img}" style="width: 300px; height: 300px">
-            <h5 class="text-primary mb-0">${course.course_id}</h5>
-            <div style="overflow: hidden;text-overflow: ellipsis; /* แสดงเครื่องหมาย ... ตัดข้อความที่เกิน */white-space: nowrap;">
-              <%
-                String message = "เทคโนโลยีสารสนเทศและชีวิตใหม่(Information Technology and Modern Life)";
-              %>
-              <h3 style="overflow: hidden;display: inline-block;max-width: 100%;text-overflow: ellipsis; /* แสดงเครื่องหมาย ... ตัดข้อความที่เกิน */">${course.name}</h3>
-<%--              <h3 style="text-overflow: ellipsis;">${course.name}</h3>--%>
-            </div>
-            <p>${course.major.name}</p>
-            <h5>ระยะเวลา ${course.totalHours} ชั่วโมง</h5>
-            <h3 style="font-weight: bold;">ราคา ${course.fee} บาท</h3>
-            <a href="${pageContext.request.contextPath}/course/${course.course_id}">อ่านเพิ่มเติม<i class="bi bi-arrow-right ms-2"></i></a></td>
+  <div class="block" data-name=${course.name}>
+    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+      <div class="service-item bg-light border-bottom border-5 border-primary rounded" style="box-shadow: 2px -2px 6px 1px #9c9c9c;">
+        <div class="position-relative p-5">
+          <img src="${pageContext.request.contextPath}/assets/img/course_img/${course.img}" style="width: 300px; height: 300px">
+            <%--            <h5 class="text-primary mb-0">${course.course_id}</h5>--%>
+          <div>
+            <br>
+            <h3 class="item">${course.name}</h3>
+              <%--              <h3 style="text-overflow: ellipsis;">${course.name}</h3>--%>
           </div>
+          <p>${course.major.name}</p>
+          <h5>ระยะเวลา ${course.totalHours} ชั่วโมง</h5>
+          <h3 style="font-weight: bold;">ราคา ${course.fee} บาท</h3>
+          <a href="${pageContext.request.contextPath}/course/${course.course_id}">อ่านเพิ่มเติม<i class="bi bi-arrow-right ms-2"></i></a></td>
         </div>
       </div>
+    </div>
+  </div>
+
+
 </c:forEach>
     </div>
   </div>

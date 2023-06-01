@@ -14,7 +14,7 @@
 
     <style>
         .block_position{
-            margin-left: 137px;
+            margin-left: 350px;
             margin-top: 54px;
             width: 900px;
             display: inline-block;
@@ -64,9 +64,12 @@
         .t1{
             width: 200px;
             font-weight: bold;
+            margin-top: 0px;
+            vertical-align: top;
         }
         .t2{
             width: 650px;
+            vertical-align: top;
         }
         .div_title_name{
             width: 100px;
@@ -107,12 +110,13 @@
     <!--Detail-->
     <div>
         <h1>คำอธิบายหลักสูตร</h1>
-        <div class="div_title_name">
+        <div>
             <span>
                 ${course_detail.principle}
             </span>
         </div>
-
+<br>
+        <hr>
         <!---Sub_Detail-->
         <table>
             <tr>
@@ -125,10 +129,11 @@
             </tr>
             <tr>
                 <td class="t1">วัตถุประสงค์</td>
+
                 <td class="t2">${course_detail.object}</td>
-            <tr>
+            </tr>
                 <td class="t1">ระยะเวลาเรียน</td>
-                <td class="t2">${course_detail.totalHours}</td>
+                <td class="t2">${course_detail.totalHours} ชั่วโมง</td>
             </tr>
             <tr>
                 <td class="t1">เป้าหมายกลุ่มอาชีพ</td>
@@ -136,75 +141,75 @@
             </tr>
             <tr>
                 <td class="t1">ค่าธรรมเนียม</td>
-                <td class="t2">${course_detail.fee}</td>
+                <td class="t2">${course_detail.fee}0 บาท</td>
             </tr>
             <tr>
                 <td class="t1">ลิ้งค์หลักสูตร</td>
                 <td class="t2"><a href="${course_detail.linkMooc}">${course_detail.linkMooc}</a></td>
             </tr>
-            <tr>
-                <td class="t1">เนื้อหาของหลักสูตร</td>
-                <td class="t2"><a href="${course_detail.file}">เอกสารประกอบการเรียน.pdf</a></td>
-            </tr>
+<%--            <tr>--%>
+<%--                <td class="t1">เนื้อหาของหลักสูตร</td>--%>
+<%--                <td class="t2"><a href="${course_detail.file}">เอกสารประกอบการเรียน.pdf</a></td>--%>
+<%--            </tr>--%>
             </tr>
         </table>
     </div>
 
     <!--Course News--->
-    <div class="block_news_big">
-        <h1>ข่าวสารเกี่ยวกับหลักสูตร</h1>
-        <div class="block_news">
-            <div><img src="${pageContext.request.contextPath}/assets/img/banner1.jpeg" alt="News_img" class="news_img"></div>
-            <div class="news_content">
-                <h1>Title</h1>
-                <p>1 มีนาคม 2566</p>
-            </div>
-        </div>
-        <div class="block_news">
-            <div><img src="${pageContext.request.contextPath}/assets/img/banner1.jpeg" alt="News_img" class="news_img"></div>
-            <div  class="news_content">
-                <h1>Title</h1>
-                <p>1 มีนาคม 2566</p>
-            </div>
-        </div>
-        <div class="block_news">
-            <div><img src="${pageContext.request.contextPath}/assets/img/banner1.jpeg" alt="News_img" class="news_img"></div>
-            <div  class="news_content">
-                <h1>Title</h1>
-                <p>1 มีนาคม 2566</p>
-            </div>
-        </div>
-        <div class="block_news">
-            <div><img src="${pageContext.request.contextPath}/assets/img/banner1.jpeg" alt="News_img" class="news_img"></div>
-            <div  class="news_content">
-                <h1>Title</h1>
-                <p>1 มีนาคม 2566</p>
-            </div>
-        </div>
-    </div>
+<%--    <div class="block_news_big">--%>
+<%--        <h1>ข่าวสารเกี่ยวกับหลักสูตร</h1>--%>
+<%--        <div class="block_news">--%>
+<%--            <div><img src="${pageContext.request.contextPath}/assets/img/banner1.jpeg" alt="News_img" class="news_img"></div>--%>
+<%--            <div class="news_content">--%>
+<%--                <h1>Title</h1>--%>
+<%--                <p>1 มีนาคม 2566</p>--%>
+<%--            </div>--%>
+<%--        </div>--%>
+<%--        <div class="block_news">--%>
+<%--            <div><img src="${pageContext.request.contextPath}/assets/img/banner1.jpeg" alt="News_img" class="news_img"></div>--%>
+<%--            <div  class="news_content">--%>
+<%--                <h1>Title</h1>--%>
+<%--                <p>1 มีนาคม 2566</p>--%>
+<%--            </div>--%>
+<%--        </div>--%>
+<%--        <div class="block_news">--%>
+<%--            <div><img src="${pageContext.request.contextPath}/assets/img/banner1.jpeg" alt="News_img" class="news_img"></div>--%>
+<%--            <div  class="news_content">--%>
+<%--                <h1>Title</h1>--%>
+<%--                <p>1 มีนาคม 2566</p>--%>
+<%--            </div>--%>
+<%--        </div>--%>
+<%--        <div class="block_news">--%>
+<%--            <div><img src="${pageContext.request.contextPath}/assets/img/banner1.jpeg" alt="News_img" class="news_img"></div>--%>
+<%--            <div  class="news_content">--%>
+<%--                <h1>Title</h1>--%>
+<%--                <p>1 มีนาคม 2566</p>--%>
+<%--            </div>--%>
+<%--        </div>--%>
+<%--    </div>--%>
 
     <!---Lecturer Data---->
-    <div class="block_lecturer">
-        <h4>อาจารย์ผู้รับผิดชอบหลักสูตร</h4>
-        <div>
-            <table>
-                <tr>
-                    <td>icon</td>
-                    <td>อ.ดร.ฐาปนพงษ์ รักกาญจนันท์</td>
-                </tr>
-                <tr>
-                    <td>icon</td>
-                    <td>คณะวิทยาศาสตร์</td>
-                </tr>
-                <tr>
-                    <td>icon</td>
-                    <td>การเรียนรูปแบบ Online</td>
-                </tr>
-            </table>
-            <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">ลงทะเบียน</a>
-<%--            <button class="btn_register_course_detail">ลงทะเบียน</button>--%>
-        </div>
-    </div>
+<%--    <div class="block_lecturer">--%>
+<%--        <h4>อาจารย์ผู้รับผิดชอบหลักสูตร</h4>--%>
+<%--        <div>--%>
+<%--            <table>--%>
+<%--                <tr>--%>
+<%--                    <td>icon</td>--%>
+<%--                    <td>อ.ดร.ฐาปนพงษ์ รักกาญจนันท์</td>--%>
+<%--                </tr>--%>
+<%--                <tr>--%>
+<%--                    <td>icon</td>--%>
+<%--                    <td>คณะวิทยาศาสตร์</td>--%>
+<%--                </tr>--%>
+<%--                <tr>--%>
+<%--                    <td>icon</td>--%>
+<%--                    <td>การเรียนรูปแบบ Online</td>--%>
+<%--                </tr>--%>
+<%--            </table>--%>
+<%--            <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">ลงทะเบียน</a>--%>
+<%--&lt;%&ndash;            <button class="btn_register_course_detail">ลงทะเบียน</button>&ndash;%&gt;--%>
+<%--        </div>--%>
+<%--    </div>--%>
 </div>
 
 <jsp:include page="/WEB-INF/view/layouts/footer.jsp"/>
