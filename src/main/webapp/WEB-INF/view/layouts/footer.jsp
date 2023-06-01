@@ -11,47 +11,29 @@
     <div class="container pt-5">
         <div class="row g-5">
             <div class="col-lg-3 col-md-6">
-                <h3 class="text-white mb-4">Quick Links</h3>
+                <h3 class="text-white mb-4">การทำงานร่วมกัน</h3>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                    <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                    <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                    <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                    <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>หน้าหลัก</a>
+                    <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>สำหรับผู้รับผิดชอบหลักสูตร</a>
+                    <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>สำหรับผู้ดูแลระบบ</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <h3 class="text-white mb-4">Popular Links</h3>
+                <h3 class="text-white mb-4">เมนู</h3>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                    <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                    <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                    <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                    <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>หน้าหลัก</a>
+                    <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>เกี่ยวกับคณะ</a>
+                    <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>หลักสูตรการอบรม</a>
+                    <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>ข่าวสารและกิจกรรม</a>
+                    <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>เกี่ยวกับเรา</a>
+                    <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>เข้าสู่ระบบ</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <h3 class="text-white mb-4">Get In Touch</h3>
-                <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>123 Street, New York, USA</p>
-                <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>info@example.com</p>
-                <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+012 345 67890</p>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h3 class="text-white mb-4">Follow Us</h3>
-                <div class="d-flex">
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
-                </div>
-            </div>
-            <div class="col-12">
-                <form class="mx-auto" style="max-width: 600px;">
-                    <div class="input-group">
-                        <input type="text" class="form-control border-white p-3" placeholder="Your Email">
-                        <button class="btn btn-primary px-4">Sign Up</button>
-                    </div>
-                </form>
+                <h3 class="text-white mb-4">ติดต่อ</h3>
+                <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>63 หมู่ 4 ตำบลหนองหาร <br> &nbsp;&nbsp;&nbsp; อำเภอสันทราย จังหวัดเชียงใหม่ 50290</p>
+                <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>inter.scitechmaejo@gmail.com</p>
+                <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>0 5387 3800, 0 5387 3801</p>
             </div>
         </div>
     </div>

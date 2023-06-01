@@ -9,14 +9,32 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="Free HTML Templates" name="keywords">
   <meta content="Free HTML Templates" name="description">
-
+<%--  <link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet"/>--%>
   <jsp:include page="/WEB-INF/view/layouts/detail-all-style.jsp"/>
+
+  <style>
+    .btn_readmore{
+      background-color: #0d6efd;
+      color: white;
+    }
+    .btn_readmore:hover{
+      color: white;
+    }
+
+    .btn_contactus{
+      background-color: #F14D5D;
+      color: white;
+    }
+    .btn_contactus:hover{
+      color: white;
+    }
+  </style>
 </head>
 
 <body>
 <!-- Navbar -->
 <jsp:include page="/WEB-INF/view/layouts/nav.jsp"/>
-<input type="button" value="เพิ่มสาขา"onclick="window.location.href='${pageContext.request.contextPath}/course/add_major'; return false;"class="add-button"/>
+<%--<input type="button" value="เพิ่มสาขา"onclick="window.location.href='${pageContext.request.contextPath}/course/add_major'; return false;"class="add-button"/>--%>
 <!-- Carousel Start -->
 <div class="container-fluid p-0 mb-5">
   <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -28,12 +46,11 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img class="w-100" src="${pageContext.request.contextPath}/assets/img/banner3.png" alt="Image">
-
         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
           <div class="p-3" style="max-width: 900px;">
             <h1 class="display-1 text-white mb-md-4 animated zoomIn">LIFELONG LEARNING</h1>
-            <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">READ MORE</a>
-            <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">CONTACT US</a>
+            <a href="" class="btn btn_readmore py-md-3 px-md-5 me-3 animated slideInLeft">เพิ่มเติม</a>
+            <a href="" class="btn btn_contactus py-md-3 px-md-5 animated slideInRight">ติดต่อเรา</a>
           </div>
         </div>
       </div>
@@ -41,9 +58,9 @@
         <img class="w-100" src="${pageContext.request.contextPath}/assets/img/banner1.jpeg" alt="Image" style="height: 886px;">
         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
           <div class="p-3" style="max-width: 900px;">
-            <h1 class="display-1 text-white mb-md-4 animated zoomIn">SCIENCE MEAJO UNIVERSITY</h1>
-            <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Get Quote</a>
-            <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact Us</a>
+            <h1 class="display-1 text-white mb-md-4 animated zoomIn">SCIENCE MAEJO UNIVERSITY</h1>
+            <a href="" class="btn btn_readmore py-md-3 px-md-5 me-3 animated slideInLeft">เพิ่มเติม</a>
+            <a href="" class="btn btn_contactus py-md-3 px-md-5 animated slideInRight">ติดต่อเรา</a>
           </div>
         </div>
       </div>
@@ -74,7 +91,7 @@
       </div>
       <div class="col-lg-7">
         <div class="mb-4">
-          <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">ABOUT US</h5>
+          <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">เกี่ยวกับเรา</h5>
           <h1 class="display-5 mb-0">LIFELONG LEARNING</h1>
         </div>
         <h4 class="text-body fst-italic mb-4" style="font-size: 20px;"> </h4>
@@ -88,19 +105,46 @@
 </div>
 <!-- About End -->
 
+<!-- Offer Start -->
+<div class="container-fluid bg-offer my-5 py-5 wow zoomIn" data-wow-delay="0.1s">
+  <div class="container py-5">
+    <div class="row gx-5 justify-content-center">
+      <div class="col-lg-7 text-center">
+        <div class="text-center mx-auto mb-4" style="max-width: 600px;">
+          <h5 class="text-white text-uppercase" style="letter-spacing: 5px;">เริ่มต้นจากการรู้จัก</h5>
+          <h1 class="display-5 text-white">MJU Lifelong Education</h1>
+        </div>
+        <p class="text-white mb-4">ให้การเรียนรู้เป็นเรื่องใกล้ตัวคุณ</p>
+        <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">เรียนรู้เพิ่มเติม</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Offer End -->
+
 
 <!-- Services Start -->
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
   <div class="container">
     <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-      <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">Services</h5>
-      <h1 class="display-5 mb-0">COURSE</h1>
+      <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">หลักสูตร</h5>
+      <h1 class="display-5 mb-0">แนะนำสำหรับคุณ</h1>
     </div>
+
+
+    <!-------Search-------->
+    <form action="search.jsp" method="get">
+      <input type="text" name="keyword" placeholder="Enter keyword">
+      <button type="submit">Search</button>
+    </form>
+
+
+
     <div class="row g-5">
       <!----------Course 1------------>
 <c:forEach var="course" items="${courses}">
       <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-        <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+        <div class="service-item bg-light border-bottom border-5 border-primary rounded" style="box-shadow: 2px -2px 6px 1px #9c9c9c;">
           <div class="position-relative p-5">
             <img src="${pageContext.request.contextPath}/assets/img/${course.img}" style="width: 300px; height: 300px">
             <h5 class="text-primary mb-0">${course.course_id}</h5>
@@ -205,22 +249,7 @@
 <!-- Pricing Plan End -->
 
 
-<!-- Offer Start -->
-<div class="container-fluid bg-offer my-5 py-5 wow zoomIn" data-wow-delay="0.1s">
-  <div class="container py-5">
-    <div class="row gx-5 justify-content-center">
-      <div class="col-lg-7 text-center">
-        <div class="text-center mx-auto mb-4" style="max-width: 600px;">
-          <h5 class="text-white text-uppercase" style="letter-spacing: 5px;">เริ่มต้นจากการรู้จัก</h5>
-          <h1 class="display-5 text-white">MJU Lifelong Education</h1>
-        </div>
-        <p class="text-white mb-4">ให้การเรียนรู้เป็นเรื่องใกล้ตัวคุณ</p>
-        <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">Learn More</a>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Offer End -->
+
 
 
 <!-- Team Start -->
@@ -285,52 +314,53 @@
 
 
 <!-- Testimonial Start --->
-<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-  <div class="container">
-    <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-      <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonial</h5>
-      <h1 class="display-5 mb-0">What People Say About Our Services</h1>
-    </div>
-    <div class="owl-carousel testimonial-carousel">
-      <div class="text-center pb-4">
-        <img class="img-fluid mx-auto rounded-circle" src="${pageContext.request.contextPath}/assets/img/testimonial-1.jpg" style="width: 100px; height: 100px;" >
-        <div class="testimonial-text bg-light rounded p-4 mt-n5">
-          <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-          </p>
-          <h4 class="text-truncate">Client Name</h4>
-          <i>Profession</i>
-        </div>
-      </div>
-      <div class="text-center">
-        <img class="img-fluid mx-auto rounded-circle" src="${pageContext.request.contextPath}/assets/img/testimonial-2.jpg" style="width: 100px; height: 100px;" >
-        <div class="testimonial-text bg-light rounded p-4 mt-n5">
-          <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-          </p>
-          <h4 class="text-truncate">Client Name</h4>
-          <i>Profession</i>
-        </div>
-      </div>
-      <div class="text-center">
-        <img class="img-fluid mx-auto rounded-circle" src="${pageContext.request.contextPath}/assets/img/testimonial-3.jpg" style="width: 100px; height: 100px;" >
-        <div class="testimonial-text bg-light rounded p-4 mt-n5">
-          <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-          </p>
-          <h4 class="text-truncate">Client Name</h4>
-          <i>Profession</i>
-        </div>
-      </div>
-      <div class="text-center">
-        <img class="img-fluid mx-auto rounded-circle" src="${pageContext.request.contextPath}/assets/img/testimonial-4.jpg" style="width: 100px; height: 100px;" >
-        <div class="testimonial-text bg-light rounded p-4 mt-n5">
-          <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-          </p>
-          <h4 class="text-truncate">Client Name</h4>
-          <i>Profession</i>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
+<%--<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">--%>
+<%--  <div class="container">--%>
+<%--    <div class="text-center mx-auto mb-5" style="max-width: 600px;">--%>
+<%--      <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonial</h5>--%>
+<%--      <h1 class="display-5 mb-0">What People Say About Our Services</h1>--%>
+<%--    </div>--%>
+<%--    <div class="owl-carousel testimonial-carousel">--%>
+<%--      <div class="text-center pb-4">--%>
+<%--        <img class="img-fluid mx-auto rounded-circle" src="${pageContext.request.contextPath}/assets/img/testimonial-1.jpg" style="width: 100px; height: 100px;" >--%>
+<%--        <div class="testimonial-text bg-light rounded p-4 mt-n5">--%>
+<%--          <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam--%>
+<%--          </p>--%>
+<%--          <h4 class="text-truncate">Client Name</h4>--%>
+<%--          <i>Profession</i>--%>
+<%--        </div>--%>
+<%--      </div>--%>
+<%--      <div class="text-center">--%>
+<%--        <img class="img-fluid mx-auto rounded-circle" src="${pageContext.request.contextPath}/assets/img/testimonial-2.jpg" style="width: 100px; height: 100px;" >--%>
+<%--        <div class="testimonial-text bg-light rounded p-4 mt-n5">--%>
+<%--          <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam--%>
+<%--          </p>--%>
+<%--          <h4 class="text-truncate">Client Name</h4>--%>
+<%--          <i>Profession</i>--%>
+<%--        </div>--%>
+<%--      </div>--%>
+<%--      <div class="text-center">--%>
+<%--        <img class="img-fluid mx-auto rounded-circle" src="${pageContext.request.contextPath}/assets/img/testimonial-3.jpg" style="width: 100px; height: 100px;" >--%>
+<%--        <div class="testimonial-text bg-light rounded p-4 mt-n5">--%>
+<%--          <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam--%>
+<%--          </p>--%>
+<%--          <h4 class="text-truncate">Client Name</h4>--%>
+<%--          <i>Profession</i>--%>
+<%--        </div>--%>
+<%--      </div>--%>
+<%--      <div class="text-center">--%>
+<%--        <img class="img-fluid mx-auto rounded-circle" src="${pageContext.request.contextPath}/assets/img/testimonial-4.jpg" style="width: 100px; height: 100px;" >--%>
+<%--        <div class="testimonial-text bg-light rounded p-4 mt-n5">--%>
+<%--          <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam--%>
+<%--          </p>--%>
+<%--          <h4 class="text-truncate">Client Name</h4>--%>
+<%--          <i>Profession</i>--%>
+<%--        </div>--%>
+<%--      </div>--%>
+<%--    </div>--%>
+<%--  </div>--%>
+<%--</div>--%>
 <!-- Testimonial End -->
 
 
