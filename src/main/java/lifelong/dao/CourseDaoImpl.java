@@ -1,6 +1,7 @@
 package lifelong.dao;
 
 import lifelong.model.Course;
+import lifelong.model.Major;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -27,6 +28,19 @@ public class CourseDaoImpl implements CouresDao{
         Course course = session.get(Course.class, id);
         return course;
     }
+
+    @Override
+    public void doAddCourse(Course course) {
+        Session session = sessionFactory.getCurrentSession();
+        session.saveOrUpdate(course);
+    }
+
+    @Override
+    public void doAddMajor(Major major) {
+        Session session = sessionFactory.getCurrentSession();
+        session.saveOrUpdate(major);
+    }
+
 //    @Override
 //    public Course getCourse(String courseId) {
 //        Session session = sessionFactory.getCurrentSession();

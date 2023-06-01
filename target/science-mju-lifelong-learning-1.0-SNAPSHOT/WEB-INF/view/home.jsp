@@ -16,7 +16,7 @@
 <body>
 <!-- Navbar -->
 <jsp:include page="/WEB-INF/view/layouts/nav.jsp"/>
-
+<input type="button" value="เพิ่มสาขา"onclick="window.location.href='${pageContext.request.contextPath}/course/add_major'; return false;"class="add-button"/>
 <!-- Carousel Start -->
 <div class="container-fluid p-0 mb-5">
   <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
