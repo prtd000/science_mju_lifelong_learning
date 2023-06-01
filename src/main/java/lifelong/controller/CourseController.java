@@ -7,9 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import lifelong.service.CourseService;
+
+import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/course")
@@ -50,10 +53,20 @@ public class CourseController {
         return "admin/addMajor";
     }
 
-    @RequestMapping(path="/save", method = RequestMethod.POST)
-    public String saveAddCourse(@ModelAttribute("course") Course course) {
-            courseService.doAddCourse(course);
-            return "redirect:/admin/add_major";
+//    @RequestMapping(path="/save", method = RequestMethod.POST)
+//    public String saveAddCourse(@ModelAttribute("course") Course course) {
+//            courseService.doAddCourse(course);
+//            return "redirect:home";
+//        }
+@RequestMapping(path="/save", method = RequestMethod.POST)public String saveProduct(
+        @Valid @ModelAttribute("course") Course course, BindingResult bindingResult, Model model) {
+            if (bindingResult.hasErrors()) {
+                model.addAttribute("title", "มีข้อผิดพลาดในการบันทึก" + title);
+                return "admin/addCourse";
+            }else {
+                courseService.doAddCourse(course);
+                return "redirect:/";
+            }
         }
 //    @RequestMapping(path="/save", method = RequestMethod.POST)
 //    public String saveMajor(@ModelAttribute("major") Major major) {

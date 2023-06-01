@@ -16,7 +16,7 @@
 <body>
 <!-- Navbar -->
 <jsp:include page="/WEB-INF/view/layouts/nav.jsp"/>
-<input type="button" value="เพิ่มสาขา"onclick="window.location.href='${pageContext.request.contextPath}/course/add_major'; return false;"class="add-button"/>
+<input type="button" value="เพิ่มสาขา"onclick="window.location.href='${pageContext.request.contextPath}/course/add_course'; return false;"class="add-button"/>
 <!-- Carousel Start -->
 <div class="container-fluid p-0 mb-5">
   <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -102,7 +102,7 @@
       <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
         <div class="service-item bg-light border-bottom border-5 border-primary rounded">
           <div class="position-relative p-5">
-            <img src="${pageContext.request.contextPath}/assets/img/${course.img}" style="width: 300px; height: 300px">
+            <img src="${pageContext.request.contextPath}/assets/img/course_img/${course.img}" style="width: 300px; height: 300px">
             <h5 class="text-primary mb-0">${course.course_id}</h5>
             <div style="overflow: hidden;text-overflow: ellipsis; /* แสดงเครื่องหมาย ... ตัดข้อความที่เกิน */white-space: nowrap;">
               <%
