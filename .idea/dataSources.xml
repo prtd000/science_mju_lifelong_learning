@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="persistence" uuid="0ec204dd-6d51-41b4-8978-515e7c547467">
-      <driver-ref>mariadb</driver-ref>
+    <data-source source="LOCAL" name="target:classes:hibernate.cfg.xml/Hibernate" uuid="901953de-686f-4bff-a1aa-9795b975097c">
+      <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
-      <remarks>jdbc.properties
+      <remarks>Hibernate
 
-D:/Project-Final-2023/Final/src/main/resources/persistence.properties</remarks>
-      <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mariadb://localhost:3306/sci_mju_lifelong?useSSL=false</jdbc-url>
+D:/Project-Final-2023/Final/target/classes/hibernate.cfg.xml</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/sci_mju_lifelong</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="hibernate.cfg.xml/Hibernate" uuid="b259d3bf-771a-4567-811f-f22af17a0ab6">
+    <data-source source="LOCAL" name="target:science-mju-lifelong-learning-1.0-SNAPSHOT:WEB-INF:classes:hibernate.cfg.xml/Hibernate" uuid="6629700a-c808-40c2-b058-acb6e2d418d7">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+D:/Project-Final-2023/Final/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/classes/hibernate.cfg.xml</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/sci_mju_lifelong</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="src:main:resources:hibernate.cfg.xml/Hibernate" uuid="209baec3-15c9-44c8-bc12-d3bfaef22008">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
