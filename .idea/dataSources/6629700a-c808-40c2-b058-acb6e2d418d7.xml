@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="target:science-mju-lifelong-learning-1.0-SNAPSHOT:WEB-INF:classes:hibernate.cfg.xml/Hibernate">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.45">
+    <root id="1">
+      <DefaultCasing>lower/lower</DefaultCasing>
+      <ServerVersion>5.6.22</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="customer"/>
+    <schema id="3" parent="1" name="db232_lab6_1"/>
+    <schema id="4" parent="1" name="db232_lab6_2"/>
+    <schema id="5" parent="1" name="db_football"/>
+    <schema id="6" parent="1" name="db_football_final"/>
+    <schema id="7" parent="1" name="db_lab8"/>
+    <schema id="8" parent="1" name="db_lab8_new"/>
+    <schema id="9" parent="1" name="db_project"/>
+    <schema id="10" parent="1" name="db_project_football"/>
+    <schema id="11" parent="1" name="entity"/>
+    <schema id="12" parent="1" name="entity2"/>
+    <schema id="13" parent="1" name="er_diagram"/>
+    <schema id="14" parent="1" name="exampleddl_dml"/>
+    <schema id="15" parent="1" name="information_schema"/>
+    <schema id="16" parent="1" name="it214_db"/>
+    <schema id="17" parent="1" name="it214_db_2"/>
+    <schema id="18" parent="1" name="it214_hbm_lab01_db"/>
+    <schema id="19" parent="1" name="it214_lab3"/>
+    <schema id="20" parent="1" name="it232_lab2_6330"/>
+    <schema id="21" parent="1" name="it311_db"/>
+    <schema id="22" parent="1" name="it311_db1"/>
+    <schema id="23" parent="1" name="it311_db2"/>
+    <schema id="24" parent="1" name="it311_db3"/>
+    <schema id="25" parent="1" name="it411db"/>
+    <schema id="26" parent="1" name="lab10"/>
+    <schema id="27" parent="1" name="lab10_test"/>
+    <schema id="28" parent="1" name="lab2_6330"/>
+    <schema id="29" parent="1" name="lab4_java"/>
+    <schema id="30" parent="1" name="lab9_sql_ddl"/>
+    <schema id="31" parent="1" name="lab_11"/>
+    <schema id="32" parent="1" name="library_books"/>
+    <schema id="33" parent="1" name="major_cineplex"/>
+    <schema id="34" parent="1" name="mysql"/>
+    <schema id="35" parent="1" name="ordering_product"/>
+    <schema id="36" parent="1" name="performance_schema"/>
+    <schema id="37" parent="1" name="project_test"/>
+    <schema id="38" parent="1" name="project_test2"/>
+    <schema id="39" parent="1" name="sakila"/>
+    <schema id="40" parent="1" name="sci_mju_lifelong">
+      <Current>1</Current>
+    </schema>
+    <schema id="41" parent="1" name="test"/>
+    <schema id="42" parent="1" name="worftest"/>
+    <schema id="43" parent="1" name="worktest_sql"/>
+    <schema id="44" parent="1" name="world"/>
+  </database-model>
+</dataSource>
