@@ -101,7 +101,7 @@
 
     <!--Image--->
     <div>
-        <img src="${pageContext.request.contextPath}/assets/img/${course_detail.img}" alt="course_image" class="c_img">
+        <img src="${pageContext.request.contextPath}/assets/img/course_img/${course_detail.img}" alt="course_image" class="c_img">
     </div>
 <br>
     <!--Detail-->

@@ -34,27 +34,28 @@
                         <label>รหัสหลักสูตร:</label>
                     </td>
                     <td><form:input path="course_id"/>
-                            <%--                        <form:errors path="name" cssClass="error"/></td>--%>
+<%--                        <form:errors path="course_id" cssClass="error"/>--%>
+                    </td>
                 </tr>
                 <tr>
                     <td>
                         <label>ชื่อหลักสูตร:</label>
                     </td>
                     <td><form:input path="name"/>
-<%--                        <form:errors path="name" cssClass="error"/></td>--%>
+                        <form:errors path="name" cssClass="error"/></td>
                 </tr>
                 <tr>
                     <td>
                         <label>ชื่อเกีตรติบัตร:</label>
                     </td>
                     <td><form:input path="certificateName"/>
-<%--                        <form:errors path="certificateName" cssClass="error"/></td>--%>
+                        <form:errors path="certificateName" cssClass="error"/></td>
                 </tr>
                 <tr>
                     <td><label>รูปหลักสูตร:</label></td>
                     <td>
                         <form:input path="img"/>
-<%--                        <form:errors path="img" cssClass="error"/>--%>
+                        <form:errors path="img" cssClass="error"/>
 <%--                        <form:textarea path="img">--%>
 <%--                        </form:textarea>--%>
 <%--                        <form:errors path="description" cssClass="error"/>--%>
@@ -64,56 +65,56 @@
                     <td><label>หลักการและเหตุผล:</label></td>
                     <td>
                         <form:textarea path="principle" cols="50" rows="5"></form:textarea>
-<%--                        <form:errors path="principle" cssClass="error"/>--%>
+                        <form:errors path="principle" cssClass="error"/>
                     </td>
                 </tr>
                 <tr>
                     <td><label>วัตถุประสงค์:</label></td>
                     <td>
                         <form:textarea path="object" cols="50" rows="5"></form:textarea>
-<%--                        <form:errors path="object" cssClass="error"/>--%>
+                        <form:errors path="object" cssClass="error"/>
                     </td>
                 </tr>
                 <tr>
                     <td><label>ระยะเวลาในการเรียน:</label></td>
                     <td>
                         <form:input path="totalHours" cssClass="number"/>
-<%--                        <form:errors path="totalHours" cssClass="error"/>--%>
+                        <form:errors path="totalHours" cssClass="error"/>
                     </td>
                 </tr>
                 <tr>
                     <td><label>เป้าหมายกลุ่มอาชีพ:</label></td>
                     <td>
                         <form:input path="targetOccupation"/>
-<%--                        <form:errors path="targetOccupation" cssClass="error"/>--%>
+                        <form:errors path="targetOccupation" cssClass="error"/>
                     </td>
                 </tr>
                 <tr>
                     <td><label>ค่าธรรมเนียม:</label></td>
                     <td>
                         <form:input path="fee" cssClass="number"/>
-<%--                        <form:errors path="fee" cssClass="error"/>--%>
+                        <form:errors path="fee" cssClass="error"/>
                     </td>
                 </tr>
                 <tr>
                     <td><label>ไฟล์หลักสูตร:</label></td>
                     <td>
                         <form:input path="file"/>
-<%--                        <form:errors path="file" cssClass="error"/>--%>
+                        <form:errors path="file" cssClass="error"/>
                     </td>
                 </tr>
                 <tr>
                     <td><label>สถานะหลักสูตร:</label></td>
                     <td>
                         <form:input path="status"/>
-<%--                        <form:errors path="status" cssClass="error"/>--%>
+                        <form:errors path="status" cssClass="error"/>
                     </td>
                 </tr>
                 <tr>
                     <td><label>ลิ้งค์หลักสูตร:</label></td>
                     <td>
                         <form:input path="linkMooc"/>
-<%--                        <form:errors path="linkMooc" cssClass="error"/>--%>
+                        <form:errors path="linkMooc" cssClass="error"/>
                     </td>
                 </tr>
                 <tr>
