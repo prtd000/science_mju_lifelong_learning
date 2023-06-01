@@ -29,7 +29,9 @@
       color: white;
     }
      .block {
-       display: none;
+       display: inline-block;
+       float: left;
+
      }
   </style>
 
@@ -78,7 +80,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img class="w-100" src="${pageContext.request.contextPath}/assets/img/banner1.jpeg" alt="Image" style="height: 886px;">
+        <img class="w-100" src="${pageContext.request.contextPath}/assets/img/banner1.jpg" alt="Image" style="height: 886px;">
         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
           <div class="p-3" style="max-width: 900px;">
             <h1 class="display-1 text-white mb-md-4 animated zoomIn">SCIENCE MAEJO UNIVERSITY</h1>
@@ -167,9 +169,9 @@
       <input type="text" id="searchInput" onkeyup="search()" placeholder="Search...">
       <!----------Course 1------------>
 <c:forEach var="course" items="${courses}">
-  <div class="block" data-name=${course.name}>
+  <div class="block col-lg-4 col-md-6 wow zoomIn" data-name=${course.name}>
     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-      <div class="service-item bg-light border-bottom border-5 border-primary rounded" style="box-shadow: 2px -2px 6px 1px #9c9c9c;">
+      <div class="service-item bg-light border-bottom border-5 border-primary rounded" style="width: 400px;box-shadow: 2px -2px 6px 1px #9c9c9c;">
         <div class="position-relative p-5">
           <img src="${pageContext.request.contextPath}/assets/img/course_img/${course.img}" style="width: 300px; height: 300px">
             <%--            <h5 class="text-primary mb-0">${course.course_id}</h5>--%>
@@ -180,7 +182,7 @@
           </div>
           <p>${course.major.name}</p>
           <h5>ระยะเวลา ${course.totalHours} ชั่วโมง</h5>
-          <h3 style="font-weight: bold;">ราคา ${course.fee} บาท</h3>
+          <h3 style="font-weight: bold;">ราคา ${course.fee}0 บาท</h3>
           <a href="${pageContext.request.contextPath}/course/${course.course_id}">อ่านเพิ่มเติม<i class="bi bi-arrow-right ms-2"></i></a></td>
         </div>
       </div>
