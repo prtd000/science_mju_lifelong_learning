@@ -10,28 +10,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2943a7d7-a4c9-4db6-bcf7-90bab8360c5c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/file/Ceramics-creation-in-the-occupation.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/file/หลักสูตร-Arduino-เบื้องต้นสำหรับยุคดิจิตอล.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/file/หลักสูตรการจัดการเรียนรู้วิชาสถิติและการวิจัย-สาขาสถิติ.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/file/หลักสูตรการบริหารจัดการขยะในชุมชนอย่างครบวงจร-วัสดุศาสตร์.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/file/หลักสูตรการสร้างต้นแบบรวดเร็วโดยเทคโนโลยีการพิมพ์สามมิติ-วัสดุศาสตร์ (1).pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/file/หลักสูตรปฏิบัติการสร้างชุดผลิตพลาสมาด้วยคลื่นไมโครเวฟและไฟฟ้ากระแสตรงแรงดันสูง.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/file/หลักสูตรประกาศนียบัตรบรรจุภัณฑ์.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/file/หลักสูตรป้องกันอันตรายจากรังสี-ระดับ1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/file/เอกสารแนบ-1-Report_non_degree.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/banner1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lifelong/controller/LecturerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lifelong/dao/LecturerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lifelong/dao/LecturerDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lifelong/service/LecturerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lifelong/service/LecturerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/course/course-detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/course/course-detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/science-mju-lifelong-learning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/science-mju-lifelong-learning.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lifelong/config/SpringMvcDispatcherServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lifelong/config/SpringMvcDispatcherServletInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lifelong/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lifelong/controller/CourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lifelong/controller/RequestOpenCourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lifelong/controller/RequestOpenCourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lifelong/dao/CouresDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lifelong/dao/CouresDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lifelong/dao/CourseDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lifelong/dao/CourseDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lifelong/dao/RequestOpenCourseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lifelong/dao/RequestOpenCourseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lifelong/dao/RequestOpenCourseDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lifelong/dao/RequestOpenCourseDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lifelong/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lifelong/model/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lifelong/model/Lecturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lifelong/model/Lecturer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lifelong/model/RequestOpenCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lifelong/model/RequestOpenCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lifelong/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lifelong/service/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lifelong/service/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lifelong/service/CourseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lifelong/service/RequestOpenCourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lifelong/service/RequestOpenCourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lifelong/service/RequestOpenCourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lifelong/service/RequestOpenCourseServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/banner1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/view/course/course-detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/view/course/course-detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/layouts/detail-all-style.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/layouts/detail-all-style.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/lecturer/request_open_course.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/lecturer/request_open_course.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lifelong/controller/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lifelong/controller/CourseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lifelong/dao/CourseDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lifelong/dao/CourseDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lifelong/model/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lifelong/model/Course.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lifelong/model/Lecturer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lifelong/model/Lecturer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lifelong/model/RequestOpenCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lifelong/model/RequestOpenCourse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lifelong/service/CourseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lifelong/service/CourseServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/classes/lifelong/controller/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/classes/lifelong/controller/CourseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/classes/lifelong/dao/CourseDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/classes/lifelong/dao/CourseDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/classes/lifelong/model/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/classes/lifelong/model/Course.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/classes/lifelong/model/Lecturer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/classes/lifelong/model/Lecturer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/classes/lifelong/model/RequestOpenCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/classes/lifelong/model/RequestOpenCourse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/classes/lifelong/service/CourseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/classes/lifelong/service/CourseServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/view/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/view/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/assets/img/banner1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/view/layouts/detail-all-style.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/science-mju-lifelong-learning-1.0-SNAPSHOT/WEB-INF/view/layouts/detail-all-style.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -73,12 +105,15 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "D:/Project-Final-2023/Final/src/main/webapp/assets/img",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "ec6bc363adb7e417e1ee96a295f27407",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -187,6 +222,10 @@
       <option name="presentableId" value="Default" />
       <updated>1685593023891</updated>
       <workItem from="1685593025190" duration="8289000" />
+      <workItem from="1685856926740" duration="5973000" />
+      <workItem from="1685865562485" duration="6150000" />
+      <workItem from="1685872078127" duration="909000" />
+      <workItem from="1685873038249" duration="9355000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1685593109693</created>
@@ -223,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685637486455</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit">
+      <created>1685640129847</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685640129847</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

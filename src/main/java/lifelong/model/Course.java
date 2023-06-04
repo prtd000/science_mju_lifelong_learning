@@ -67,9 +67,9 @@ public class Course {
     @ManyToOne
     @JoinColumn(name = "major_id")
     private Major major;
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "course_id",nullable = false)
-    private Set<RequestOpenCourse> rqOpenCourse = new HashSet<>();
+//    @OneToMany(cascade = CascadeType.ALL)
+//    @JoinColumn(name = "course_id",nullable = false)
+//    private Set<RequestOpenCourse> rqOpenCourse = new HashSet<>();
 
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "course_id",nullable = false)
@@ -183,14 +183,6 @@ public class Course {
 
     public void setLinkMooc(String linkMooc) {
         this.linkMooc = linkMooc;
-    }
-
-    public Set<RequestOpenCourse> getRqOpenCourse() {
-        return rqOpenCourse;
-    }
-
-    public void setRqOpenCourse(Set<RequestOpenCourse> rqOpenCourse) {
-        this.rqOpenCourse = rqOpenCourse;
     }
 
     public Set<Activity> getActivities() {

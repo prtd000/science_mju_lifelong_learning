@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface RequestOpenCourseDao {
 
-    List<RequestOpenCourse> getListRequestOpenCourse();
+    void doRequestOpenCourseDetail(RequestOpenCourse requestOpenCourse);
 
 }

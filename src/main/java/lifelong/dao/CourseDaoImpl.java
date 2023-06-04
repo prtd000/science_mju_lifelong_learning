@@ -2,6 +2,7 @@ package lifelong.dao;
 
 import lifelong.model.Course;
 import lifelong.model.Major;
+import lifelong.model.RequestOpenCourse;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

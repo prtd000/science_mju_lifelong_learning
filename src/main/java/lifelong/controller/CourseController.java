@@ -46,19 +46,19 @@ public class CourseController {
             model.addAttribute("add_course", new Course());
             return "admin/addCourse";
         }
-    @GetMapping("/add_major")
-    public String showFormAddMajor(Model model) {
-        model.addAttribute("title", "เพิ่ม" + title);
-        model.addAttribute("add_major", new Major());
-        return "admin/addMajor";
-    }
+//    @GetMapping("/add_major")
+//    public String showFormAddMajor(Model model) {
+//        model.addAttribute("title", "เพิ่ม" + title);
+//        model.addAttribute("add_major", new Major());
+//        return "admin/addMajor";
+//    }
 
 //    @RequestMapping(path="/save", method = RequestMethod.POST)
 //    public String saveAddCourse(@ModelAttribute("course") Course course) {
 //            courseService.doAddCourse(course);
 //            return "redirect:home";
 //        }
-@RequestMapping(path="/save", method = RequestMethod.POST)public String saveProduct(
+@RequestMapping(path="/save", method = RequestMethod.POST)public String saveCourse(
         @Valid @ModelAttribute("course") Course course, BindingResult bindingResult, Model model) {
             if (bindingResult.hasErrors()) {
                 model.addAttribute("title", "มีข้อผิดพลาดในการบันทึก" + title);
